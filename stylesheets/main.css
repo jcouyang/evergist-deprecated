@@ -6488,8 +6488,16 @@ margin-top:calc(-50% + 18px);
 }
 .gist-list {
   max-width: 600px;
-  margin: auto;
   transition: opacity 0.3s ease-in-out 0s;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 256px;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .left-nav {
   overflow: hidden;
@@ -6521,11 +6529,7 @@ margin-top:calc(-50% + 18px);
 .gist-card .delete .mui-floating-action-button-container {
   background-color: #e64a19;
 }
-.stage.detail {
-  margin-left: 256px;
-}
 .stage.detail .gist-list {
-  margin: 0;
   max-width: 407px;
 }
 .stage.detail .gist-detail {
